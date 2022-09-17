@@ -1,0 +1,35 @@
+.features-list {
+    display: flex;
+}
+
+.features-list-item {
+    width: 270px;
+
+    &:not(:last-child) {
+            margin-right: 30px;
+    }
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--ws-lightgrey);
+        border-radius: 4px;
+        width: 270px;
+        height: 120px;
+        margin-bottom: 30px;
+    }
+
+    &__name {
+        font-weight: 700;
+        line-height: 1.15;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        color: var(--ws-darkgrey);
+    }
+
+    &__description {
+        line-height: 1.71;
+        color: var(--ws-grey);
+    }
+}
